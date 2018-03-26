@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+<html>
+<head>
+	<title>AngularJS - Hello World</title>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body class="container" ng-app="HelloApp" ng-controller="HelloCtrl">
+	<h1>Hello, My name is {{name}}</h1>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+	<script type="text/javascript">
+		angular.module('HelloApp', [])
+			.controller('HelloCtrl', ['\$scope', function(\$scope){
+				\$scope.name = "Calvin";
+			}])
+	</script>
+</body>
+</html>
+]]></content>
+	<tabTrigger>hellong</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
